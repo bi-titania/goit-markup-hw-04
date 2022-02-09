@@ -110,18 +110,29 @@ p {
 /* ---------- Заголовок ---------- */
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  position: relative;
   text-align: center;
   height: 600px;
-  background-color: var(--background);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #c4c4c4;
 }
+
+.bg-hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*   #C4C4C4;*/
+
 .hero-title {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   width: 696px;
-  height: 120px;
 
   font-style: normal;
   font-weight: 900;
