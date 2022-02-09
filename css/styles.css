@@ -31,7 +31,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--title-color);
+  color: inherit;
 }
 
 h1,
@@ -55,8 +55,7 @@ p {
   letter-spacing: 0.02em;
   height: 80px;
 }
-
-header {
+.site-header {
   border-bottom: 1px solid #ececec;
 }
 .header .logo {
@@ -230,8 +229,6 @@ header {
   margin-right: 30px;
 }
 .team-card {
-  width: 270px;
-  height: 370px;
   background-color: var(--title-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 0px 4px 4px;
@@ -255,12 +252,13 @@ header {
   color: var(--text-color);
 }
 .team-text {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 90px;
 }
 
 /* ---------- Подвал страницы ---------- */
 
-footer {
+.footer {
   height: 250px;
   background-color: var(--background);
   color: var(--title-color);
@@ -310,7 +308,7 @@ footer {
 .projects {
   align-items: center;
 }
-.projects h1 {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
