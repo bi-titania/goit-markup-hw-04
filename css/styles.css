@@ -222,7 +222,6 @@ p {
   background-repeat: no-repeat;
   background-color: var(--item-color);
   background-position: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .skills-item.icon-1::before {
@@ -309,10 +308,13 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.social {
+.social-list {
+  display: flex;
   padding-left: 30px;
 }
-
+.social-list li + li {
+  margin-left: 10px;
+}
 /* ---------Клиенты----------*/
 
 .client-list {
@@ -369,7 +371,8 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-/* -- контакты -- */
+/*------- контакты -------*/
+
 .address-link,
 .address-contact {
   font-style: normal;
@@ -400,7 +403,7 @@ p {
   display: flex;
 }
 .social-media {
-  margin-left: 150px;
+  margin-left: 70px;
   margin-top: 10px;
 }
 .social-media p {
@@ -409,17 +412,21 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
+/*------ иконки социальных сетей ------*/
+
 .media-list {
   display: flex;
 }
+.media-list li + li {
+  margin-left: 10px;
+}
 .media-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--icon-color);
 }
-.media-icon:hover {
+.footer-icon {
   fill: var(--title-color);
 }
 .media-link {
@@ -430,9 +437,6 @@ p {
   height: 45px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-}
-.media-list li + li {
-  margin-left: 10px;
 }
 .media-link:hover,
 .media-link:focus {
