@@ -3,8 +3,9 @@
   --accent-color: #2196f3;
   --title-color: #ffffff;
   --background: #2f303a;
-  --team-color: #f5f4fa;
+  --item-color: #f5f4fa;
   --text-color: #757575;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -81,6 +82,8 @@ p {
 }
 .nav-link {
   color: var(--main-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -93,19 +96,38 @@ p {
 }
 .contact-list {
   display: flex;
-  margin-left: 330px;
+  align-items: center;
+  margin-left: 280px;
 }
 .contact-list li:not(:last-child) {
   margin-right: 50px;
   flex-wrap: nowrap;
 }
 .link-contact {
+  display: inline-flex;
+  align-items: center;
   color: var(--text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent-color);
 }
+.contact-item {
+  display: flex;
+}
+.contact-icon {
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+.link-contact:hover svg{
+  fill: var(--accent-color);
+}
+.link-contact:focus svg {
+  fill: var(--accent-color);
+}
+
 
 /* ---------- Заголовок ---------- */
 
@@ -196,6 +218,36 @@ p {
 .skills-list li:not(:last-child) {
   margin-right: 35px;
 }
+.skills-item::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-color: var(--item-color);
+  background-position: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* .skills-item::before:hover,
+.skills-item::before:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
+
+.skills-item.icon-1::before {
+  background-image: url(../img/1_antenna.svg);
+}
+.skills-item.icon-2::before {
+  background-image: url(../img/2_clock.svg);
+}
+.skills-item.icon-3::before {
+  background-image: url(../img/3_diagram.svg);
+}
+.skills-item.icon-4::before {
+  background-image: url(../img/4_astronaut.svg);
+}
+
 /* ---------- Виды деятельности ---------- */
 
 .work {
@@ -222,8 +274,7 @@ p {
 /* ---------- Команда ---------- */
 
 .team {
-  height: 650px;
-  background-color: var(--team-color);
+  background-color: var(--item-color);
 }
 .team-title {
   font-weight: bold;
@@ -236,8 +287,8 @@ p {
 .team-list {
   display: flex;
 }
-.team-list li:not(:last-child) {
-  margin-right: 30px;
+.team-list li + li {
+  margin-left: 30px;
 }
 .team-card {
   background-color: var(--title-color);
@@ -261,11 +312,68 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 15px;
 }
 .team-text {
+  justify-content: center;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
+.social {
+  padding-left: 30px;
+}
+/* .social-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+} */
+
+/* ---------Клиенты----------*/
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.clients h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4%;
+  border: 1px solid var(--icon-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+.client-link:hover svg,
+.client-link:focus svg {
+  fill: var(--accent-color);
+}
+.client-list li + li {
+  margin-left: 30px;
+}
+.client-icon {
+  fill: var(--icon-color);
+}
+/* .client-icon:hover {
+  fill: var(--accent-color);  */
 
 /* ---------- Подвал страницы ---------- */
 
@@ -299,6 +407,7 @@ p {
 .li-contact {
   margin-top: 3px;
 }
+
 .address-link:hover {
   color: var(--accent-color);
 }
@@ -309,6 +418,62 @@ p {
 .address-contact:focus {
   color: var(--accent-color);
 }
+
+.aside {
+  position: relative;
+  display: flex;
+}
+.social-media {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.social-media p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.media-list {
+  display: flex;
+}
+.media-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+.media-icon:hover {
+  fill: var(--title-color);
+}
+.media-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.media-list li + li {
+  margin-left: 10px;
+}
+.media-link:hover,
+.media-link:focus {
+  background-color: var(--accent-color);
+}
+.media-link:hover svg,
+.media-link:focus svg {
+  fill:var(--title-color);
+}
+/* .media-link:hover {
+  fill: var(--title-color);
+  background: var(--accent-color); */
+}
+/* .media-li {
+}
+:hover {
+} */
 
 /* ---------- Портфолио ---------- */
 /* ---------- Портфолио ---------- */
@@ -354,9 +519,9 @@ p {
 
   box-sizing: content-box;
   height: 40px;
-  background-color: var(--team-color);
+  background-color: var(--item-color);
   border-radius: 4px;
-  border: var(--team-color);
+  border: var(--item-color);
 }
 .button:hover,
 .button:focus {
