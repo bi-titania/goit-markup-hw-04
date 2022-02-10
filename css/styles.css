@@ -121,13 +121,12 @@ p {
   fill: var(--text-color);
   margin-right: 10px;
 }
-.link-contact:hover svg{
+.link-contact:hover svg {
   fill: var(--accent-color);
 }
 .link-contact:focus svg {
   fill: var(--accent-color);
 }
-
 
 /* ---------- Заголовок ---------- */
 
@@ -140,16 +139,12 @@ p {
   padding-bottom: 200px;
   background-color: #c4c4c4;
 }
-
 .bg-hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bg_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*   #C4C4C4;*/
-
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -204,7 +199,6 @@ p {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -230,10 +224,6 @@ p {
   background-position: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/* .skills-item::before:hover,
-.skills-item::before:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
 
 .skills-item.icon-1::before {
   background-image: url(../img/1_antenna.svg);
@@ -322,16 +312,6 @@ p {
 .social {
   padding-left: 30px;
 }
-/* .social-item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-} */
 
 /* ---------Клиенты----------*/
 
@@ -372,8 +352,6 @@ p {
 .client-icon {
   fill: var(--icon-color);
 }
-/* .client-icon:hover {
-  fill: var(--accent-color);  */
 
 /* ---------- Подвал страницы ---------- */
 
@@ -407,7 +385,6 @@ p {
 .li-contact {
   margin-top: 3px;
 }
-
 .address-link:hover {
   color: var(--accent-color);
 }
@@ -418,7 +395,6 @@ p {
 .address-contact:focus {
   color: var(--accent-color);
 }
-
 .aside {
   position: relative;
   display: flex;
@@ -464,16 +440,8 @@ p {
 }
 .media-link:hover svg,
 .media-link:focus svg {
-  fill:var(--title-color);
-}
-/* .media-link:hover {
   fill: var(--title-color);
-  background: var(--accent-color); */
 }
-/* .media-li {
-}
-:hover {
-} */
 
 /* ---------- Портфолио ---------- */
 /* ---------- Портфолио ---------- */
